@@ -1,0 +1,344 @@
+.col-auto, label, h3, .centrar-img-iframe, .disco, .contenedor-imagen, .card-div-ivan {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+h4, h1 {
+  color: #fac003;
+}
+
+/*Color Span*/
+span {
+  color: #836401;
+}
+
+/*Shows*/
+.card-ivan {
+  background-color: #ecbc1e;
+}
+
+.card-div-ivan {
+  gap: 200px;
+}
+
+div iframe {
+  border-radius: 30px;
+}
+
+/*Fotos*/
+section article img {
+  margin: 0px 15px 45px 20px;
+  position: static;
+}
+
+/*Vista Mobile Index*/
+/*768px*/
+@media screen and (max-width: 768px) {
+  .card-div-ivan {
+    gap: 100px;
+    flex-wrap: wrap;
+  }
+  iframe {
+    height: 400px;
+  }
+}
+/*425px*/
+@media screen and (max-width: 425px) {
+  article.centrar-img-iframe div img {
+    height: 250px;
+  }
+  div#carouselExampleCaptions {
+    display: none;
+  }
+}
+/*375px*/
+@media screen and (max-width: 375px) {
+  article.centrar-img-iframe div img {
+    height: 200px;
+  }
+  iframe {
+    height: 300px;
+  }
+}
+/*Link "Mas info..."*/
+.mas-info-style {
+  text-decoration: none;
+  color: #69540f;
+  font-weight: bold;
+}
+
+.mas-info-style:hover {
+  color: #bd9513;
+}
+
+/*Font size parrafo*/
+div.font-size-biografia p {
+  font-size: 20px;
+}
+
+/*Responsive Biografia*/
+@media screen and (max-width: 1200px) {
+  div.contenedor-imagen img {
+    width: 200%;
+    background-color: rgba(192, 147, 0, 0.7450980392);
+    border-radius: 20px;
+    padding-top: 40px;
+  }
+  div.contenedor-imagen {
+    background-color: rgba(192, 147, 0, 0.7450980392);
+    border-radius: 20px;
+    margin-bottom: 25px;
+  }
+  .bg-color-biografia-1 {
+    background-color: #bb9002;
+    padding: 2%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 4%;
+  }
+  .bg-color-biografia-2 {
+    background-color: #9b7701;
+    padding: 2%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 425px) {
+  div.contenedor-imagen img {
+    width: 100%;
+  }
+  div.font-size-biografia p {
+    font-size: 18px;
+  }
+}
+/*Integrantes*/
+.grids-integrantes {
+  display: grid;
+  grid-template-columns: repeat(2, 5fr);
+  gap: 50px;
+  background-color: #ebbb1d;
+  padding: 2%;
+  border-radius: 50px;
+  margin: 15px;
+  font-size: 23px;
+  flex-wrap: wrap;
+}
+
+.img-integrante-1 {
+  justify-self: stretch;
+}
+
+.img-integrante-2 {
+  justify-self: center;
+}
+
+/*Vista Responsive de Banda*/
+@media screen and (max-width: 1024px) {
+  .grids-integrantes {
+    grid-template-columns: none;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  div img.img-integrante-1 {
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  div img.img-integrante-2 {
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  div.grids-integrantes p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  div.grids-integrantes img {
+    padding-right: 10px;
+  }
+}
+/*Disco*/
+/*Vista mobile discografia*/
+@media (max-width: 505px) {
+  div.disco img {
+    width: 100%;
+  }
+}
+/*Body*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: montserrat;
+  background-color: rgba(245, 190, 10, 0.862745098);
+  overflow-x: hidden;
+}
+
+/*Header*/
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+/*Barra de navegacion*/
+.nav-link {
+  transition: 0.5s;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffc400;
+  margin: 2%;
+}
+
+.nav-link:hover {
+  background-color: #a88100;
+  border-radius: 12px;
+  color: #fcff47;
+}
+
+/*Footer*/
+.contenedor-1 {
+  grid-area: instagram-logo;
+  justify-self: end;
+  transition: 2s;
+}
+
+.contenedor-2 {
+  grid-area: logo-ruido-blanco;
+  justify-self: center;
+}
+
+.contenedor-3 {
+  grid-area: copyright;
+  justify-self: center;
+}
+
+.contenedor-4 {
+  grid-area: youtube-logo;
+  justify-self: start;
+  transition: 2s;
+}
+
+.super-contenedor {
+  width: 100%;
+  margin: 0 auto;
+  height: 5%;
+  display: grid;
+  grid-template-areas: "logo-ruido-blanco logo-ruido-blanco" "copyright copyright" "youtube-logo instagram-logo";
+  grid-template-columns: 50%;
+  grid-template-rows: auto;
+}
+
+footer.bg-black {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  padding: 0.6%;
+  margin-top: 7px;
+}
+
+/*iconos instagram-youtube*/
+i {
+  color: rgb(245, 221, 8);
+  font-size: 40px;
+  transition: 0.6s;
+}
+
+i:hover {
+  color: #c29503;
+  transform: scale(1.2);
+}
+
+/*Centrar*/
+.centrar-img-iframe {
+  flex-wrap: wrap;
+}
+
+div img.centrar-img-iframe {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+/* Backgrounds-colors */
+.bg-gray-1 {
+  background-color: rgba(131, 134, 134, 0.5);
+  margin: 30px 10px 20px 10px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.bg-gray-2 {
+  background-color: rgba(131, 134, 134, 0.644);
+  margin: 30px 10px 20px 10px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.bg-yellow-opaccity {
+  background-color: rgba(236, 234, 74, 0.39);
+  padding: 10px 20px 40px 20px;
+  margin: 30px 10px 20px 10px;
+}
+
+.bg-black {
+  background-color: rgb(0, 0, 0);
+}
+
+/* Titulos y subtitulos*/
+h1 {
+  text-align: start;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 1% 0% 0% 1%;
+}
+
+h2 {
+  font-weight: bold;
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 110%;
+  text-align: center;
+}
+
+label {
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+/*Boton enviar*/
+.btn-primary {
+  background-color: #745902;
+  color: #ecbc1e;
+  border-color: #836810;
+}
+
+.btn-primary:hover {
+  background-color: #745902;
+  color: #ffd755;
+  border-color: #9e7e14;
+}
+
+.btn-primary:active {
+  --bs-btn-active-bg:#70590f;
+  --bs-btn-active-color: #ffd755;
+  --bs-btn-active-border-color: #9e7e14;
+}
+
+/*# sourceMappingURL=style.css.map */
